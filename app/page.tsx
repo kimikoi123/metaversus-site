@@ -11,7 +11,7 @@ import World from "../sections/World"
 
 export default function Home() {
   return (
-    <div className="bg-[#1A232E] overflow-hidden">
+    <div className="bg-[#1A232E] overflow-hidden text-white">
       <Navbar />
       <Hero />
       <About />

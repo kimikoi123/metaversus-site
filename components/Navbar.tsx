@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { navVariants } from "../utils/motion"
-import styles from "@/styles/index"
+import styles from "@/styles"
 
 export default function Navbar() {
   return (
@@ -10,7 +10,7 @@ export default function Navbar() {
       initial="hidden"
       whileInView="show"
       variants={navVariants}
-      className={`${styles.xPaddings} container mx-auto flex justify-between items-center pt-6`}
+      className={`${styles.xPaddings} ${styles.innerWidth} mx-auto flex justify-between items-center pt-6`}
     >
       <img className="text-black" src="/search.svg" alt="search" />
       <div className="text-white text-2xl font-extrabold">METAVERSUS</div>
