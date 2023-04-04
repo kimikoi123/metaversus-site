@@ -7,7 +7,7 @@ import { TypingText } from "@/components/CustomText"
 
 export default function About() {
   return (
-    <div className={`${styles.innerWidth} ${styles.xPaddings} mt-20 lg:mt-0 mx-auto`}>
+    <div className={`${styles.innerWidth} sm:px-16 px-6 mt-20 lg:mt-0 mx-auto`}>
       <motion.div
         variants={staggerContainer(0, .2)}
         initial="hidden"

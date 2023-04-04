@@ -16,7 +16,7 @@ export default function Explore() {
   }
 
   return (
-    <div className={`${styles.xPaddings} pt-12 container mx-auto`}>
+    <div className={`sm:px-16 px-6 pt-12 container mx-auto`}>
       <motion.div 
       variants={staggerContainer(0, .2)}
       initial="hidden"
