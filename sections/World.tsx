@@ -2,6 +2,7 @@
 
 import { TypingText } from "@/components/CustomText"
 import styles from "@/styles"
+import { fadeIn } from "@/utils/motion"
 import { motion } from "framer-motion"
 
 export default function World() {
@@ -13,11 +14,15 @@ export default function World() {
       className={`${styles.innerWidth} mx-auto flex flex-col justify-center items-center gap-5 sm:px-16 px-6`}
     >
       <TypingText title="| People on World" />
-      <div className="mx-auto text-3xl md:text-6xl font-bold leading-10 md:leading-[4rem] text-center mb-20">
+      <motion.div 
+      variants={fadeIn('up', 'tween', 0.25, 1)}
+      className="mx-auto text-3xl md:text-6xl font-bold leading-10 md:leading-[4rem] text-center mb-20">
         Track friends around you and invite them to play together in the same
         world
-      </div>
-      <div className="relative">
+      </motion.div>
+      <motion.div 
+      variants={fadeIn('up', 'tween', 0.5, 1)}
+      className="relative">
         <img className="" src="/map.png" />
         <div className="absolute scale-50 sm:scale-100 top-0 lg:top-20 left-10 lg:left-40">
           <div className="relative">
@@ -68,7 +73,7 @@ export default function World() {
             <div className="font-bold font-sm">Hawkins Labs</div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </motion.section>
   )
 }
