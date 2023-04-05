@@ -21,7 +21,7 @@ export default function Footer() {
         <div>Copyright © 2021 - 2022 Metaversus. All rights reserved.</div>
         <div className="flex gap-5">
           {socials.map(social => (
-            <a href="#"><img src={social.url} alt="" key={social.name} /></a>
+            <a key={social.name} href="#"><img src={social.url} alt="" key={social.name} /></a>
           ))}
         </div>
       </div>

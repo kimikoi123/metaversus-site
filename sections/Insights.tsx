@@ -21,7 +21,7 @@ export default function Insights() {
       variants={staggerContainer(0, 0.25)}
       className="flex flex-col gap-5">
         {insights.map((insight, index) => (
-          <InsightComponent {...insight} index={index}/>
+          <InsightComponent key={index} {...insight} index={index}/>
         ))}
       </motion.div>
     </motion.div>
