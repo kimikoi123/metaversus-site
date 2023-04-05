@@ -13,7 +13,7 @@ export default function About() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className="text-center py-5 text-[#C7C7C780]" 
+        className="text-center py-5" 
       >
         <TypingText title="| About Metaversus" />
       </motion.div>
